@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PlantStore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">PlantStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <div class="hero_section product_hero">
+                <div class="container">
+                    <div class="title text-white text-center py-5">
+                        <h1>Find Your Perfect Plant</h1>
+                        <p>Discover plants based on sunlight, care level, and pet-friendliness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plant Matchmaker Section -->
+        <section>
+            <div class="container py-5">
+                <h2 class="text-center mb-4">Requirements</h2>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="sunlight" class="form-label">Sunlight</label>
+                        <select id="sunlight" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="low">Low Light</option>
+                            <option value="medium">Medium Light</option>
+                            <option value="high">Bright Light</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="care" class="form-label">Plant size</label>
+                        <select id="care" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="easy">Big</option>
+                            <option value="moderate">Middle</option>
+                            <option value="advanced">Small</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="pets" class="form-label">Water frequency</label>
+                        <select id="pets" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="col-12 text-center mt-4">
+                        <!-- <button type="submit" class="btn btn-success">Find Plants</button> -->
+                        <a href="product.html" class="btn btn-success">Find Plants</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Popular Plants Section -->
+        <section>
+            <div class="container py-5">
+                <h2 class="text-center mb-4">Popular Houseplants</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/product1.jpg" class="card-img-top" alt="Snake Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">Snake Plant</h5>
+                                <p class="card-text">Low maintenance, perfect for beginners.</p>
+                                <a href="#" class="btn btn-success" onclick="alert('Hello! You clicked the link.');">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/product2.jpg" class="card-img-top" alt="Fiddle Leaf Fig">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiddle Leaf Fig</h5>
+                                <p class="card-text">A statement plant for any room.</p>
+                                <a href="#" class="btn btn-success" onclick="alert('Hello! You clicked the link.');">Add to
+                                    cart</a>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <!-- <img src="assets/images/product3.jpg" class="card-img-top" alt="Succulent"> -->
+                            <iframe width="100%" height="267" src="https://www.youtube.com/embed/ejetprKvOrg?si=eXh37Ok_uVzMIyZ8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Succulent Collection</h5>
+                                <p class="card-text">A variety of succulents for every corner.</p>
+                                <a href="#" class="btn btn-success" onclick="alert('Hello! You clicked the link.');">Add to
+                                    cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Plant tips Section -->
+        <section class="plant_tips">
+            <div class="container py-5">
+                <h2 class="text-center mb-4">Plant Parant Tips</h2>
+                <p class="text-center">Essential tips to keep your plants happy and healthy.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="assets/images/product1.jpg" class="card-img-top" alt="Snake Plant">
+                            <div class="card-body">
+                                <h5 class="card-title">Snake Plant</h5>
+                                <ul>
+                                    <li>Ensure proper drainage to prevent root rot.</li>
+                                    <li>Use the right soil mix for your plant type.</li>
+                                    <li>Place plants in appropriate light conditions.</li>
+                                </ul>
+                                <input type="file">
+                                <a href="#" class="btn btn-success" onclick="alert('Upload the file successfully.');">Send</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="assets/images/product2.jpg" class="card-img-top" alt="Fiddle Leaf Fig">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiddle Leaf Fig</h5>
+            
+                                <ul>
+                                    <li>Water consistently, but avoid overwatering.</li>
+                                    <li>Dust leaves regularly to help with photosynthesis.</li>
+                                    <li>Rotate your plants for even growth.</li>
+                                </ul>
+                                <input type="file">
+                                <a href="#" class="btn btn-success" onclick="alert('Upload the file successfully.');">Send</a>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 PlantStore. Developed by <span><a href="https://www.facebook.com/" target="_blank">Mehedi
+                    Alam</a></span> All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
