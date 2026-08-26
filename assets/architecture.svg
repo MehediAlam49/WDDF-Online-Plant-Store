@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title description">
+  <title id="title">PlantStore static site architecture</title>
+  <description id="description">Browser pages connect to shared HTML, CSS, JavaScript, and media assets, with optional external CDN and YouTube content.</description>
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; fill: #183b32; }
+    .eyebrow { font-size: 14px; font-weight: 700; letter-spacing: 2px; fill: #2d7a5d; }
+    .heading { font-size: 26px; font-weight: 800; }
+    .label { font-size: 16px; font-weight: 700; }
+    .detail { font-size: 13px; fill: #527267; }
+    .panel { fill: #f5fbf7; stroke: #b6d7c5; stroke-width: 2; }
+    .node { fill: #fff; stroke: #82b99a; stroke-width: 2; }
+    .external { fill: #fffaf0; stroke: #d8b66a; stroke-width: 2; }
+    .flow { fill: none; stroke: #2d9b70; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 8 12; animation: move 2.4s linear infinite; }
+    .flow.gold { stroke: #c28b2c; animation-duration: 3s; }
+    @keyframes move { to { stroke-dashoffset: -40; } }
+    @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+  </style>
+  <rect width="1200" height="560" rx="24" fill="#eef7f1"/>
+  <text x="60" y="58" class="eyebrow">PLANTSTORE / STATIC ARCHITECTURE</text>
+  <text x="60" y="98" class="heading">A simple browser-first shopping experience</text>
+  <rect x="60" y="145" width="1080" height="175" rx="18" class="panel"/>
+  <text x="88" y="180" class="label">Browser pages</text>
+  <text x="88" y="204" class="detail">Static HTML entry points</text>
+  <rect x="88" y="230" width="180" height="58" rx="10" class="node"/>
+  <text x="178" y="255" text-anchor="middle" class="label">Home</text>
+  <text x="178" y="275" text-anchor="middle" class="detail">index.html</text>
+  <rect x="288" y="230" width="180" height="58" rx="10" class="node"/>
+  <text x="378" y="255" text-anchor="middle" class="label">Products</text>
+  <text x="378" y="275" text-anchor="middle" class="detail">product.html</text>
+  <rect x="488" y="230" width="180" height="58" rx="10" class="node"/>
+  <text x="578" y="255" text-anchor="middle" class="label">About</text>
+  <text x="578" y="275" text-anchor="middle" class="detail">about.html</text>
+  <rect x="688" y="230" width="180" height="58" rx="10" class="node"/>
+  <text x="778" y="255" text-anchor="middle" class="label">Contact</text>
+  <text x="778" y="275" text-anchor="middle" class="detail">contact.html</text>
+  <rect x="888" y="230" width="220" height="58" rx="10" class="external"/>
+  <text x="998" y="255" text-anchor="middle" class="label">External content</text>
+  <text x="998" y="275" text-anchor="middle" class="detail">CDN + YouTube</text>
+  <path d="M178 288 V370 H600" class="flow"/>
+  <path d="M378 288 V370 H600" class="flow"/>
+  <path d="M578 288 V370 H600" class="flow"/>
+  <path d="M778 288 V370 H600" class="flow"/>
+  <path d="M998 288 V370 H600" class="flow gold"/>
+  <rect x="60" y="370" width="1080" height="125" rx="18" class="panel"/>
+  <text x="88" y="410" class="label">Shared assets and browser logic</text>
+  <rect x="88" y="430" width="250" height="42" rx="9" class="node"/>
+  <text x="213" y="456" text-anchor="middle" class="label">Bootstrap + style.css</text>
+  <rect x="370" y="430" width="250" height="42" rx="9" class="node"/>
+  <text x="495" y="456" text-anchor="middle" class="label">script.js interactions</text>
+  <rect x="652" y="430" width="220" height="42" rx="9" class="node"/>
+  <text x="762" y="456" text-anchor="middle" class="label">Images + media</text>
+  <rect x="904" y="430" width="204" height="42" rx="9" class="external"/>
+  <text x="1006" y="456" text-anchor="middle" class="label">No backend</text>
+</svg>
