@@ -358,4 +358,13 @@ The following production capabilities are not included in this static implementa
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Add a `LICENSE` file containing the full MIT text when distributing the repository.
 
+[Back to Contents](#contents)
+
+
+## Contact
+- **Project Maintainer:** Mehedi Alam
+- **GitHub:** https://github.com/MehediAlam49
+- **Repository:** https://github.com/MehediAlam49/WDDF-Online-Plant-Store
+- **Email:** [mehedialam806@gmail.com](mailto:mehedialam806@gmail.com)
+  
 <p align="right"><a href="#contents">Back to Contents</a></p>
